@@ -1,6 +1,6 @@
 # This is a BMI calculator
 # major considerations: mass and height units + all inputs are strings. Negative values
-# prompt inputs, calculates the BMI and returns bmi.
+# prompt inputs, calculates the BMI and returns bmi. Returns a message on health status
 # final output narrowed down for age 20+ adults.
 
 
@@ -8,9 +8,9 @@ import math
 
 
 def bmiCalculator():
-    name = input("What is your name?\n")
-    print(f'Hello {name}. Select your preferred units.')
-    selected_unit = input("Type 1 for metric or 2 for imperial:\n")
+    name = input("What is your name? ")
+    print(f'Hello {name}. Select your preferred units.\n')
+    selected_unit = input("1 for metric, 2 for imperial: ")
 
     if selected_unit == "1":
         print_bmi(metricCompute())
@@ -58,7 +58,7 @@ def print_bmi(x):
     elif 25<=x<=29.9:
         print("You are overweight.")
     else:
-        print("You are obese.")
+        print("You are not healthy.")
     
 
 bmiCalculator()
