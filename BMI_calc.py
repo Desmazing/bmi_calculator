@@ -52,13 +52,13 @@ def imperialCompute():
 def print_bmi(x):
     print("Your BMI is {}".format(x))
     if x < 18.5:
-        print("You could be underweight.")
+        print(f"Dear {name}, you could be underweight.")
     elif 18.5<=x<=24.9:
-        print("You are of normal weight.")
+        print(f"Dear {name}, you are of normal weight.")
     elif 25<=x<=29.9:
-        print("You are overweight.")
+        print(f"Dear {name}, you are overweight.")
     else:
-        print("You are not healthy.")
+        print(f"Dear {name}, you are not healthy.")
     
 
 bmiCalculator()
