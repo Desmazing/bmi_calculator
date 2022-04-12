@@ -4,8 +4,8 @@ import tkinter as tk
 
 window = tk.Tk()
 
-for i in range(3):
-    for j in range(3):
+for i in range(4):
+    for j in range(4):
         frame = tk.Frame(
             master=window,
             relief=tk.RAISED,
