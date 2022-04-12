@@ -1,4 +1,6 @@
 # what does grid do for tkinter
+# grid places labels and frames in an orderly manner *
+# different from place 
 
 import tkinter as tk
 
